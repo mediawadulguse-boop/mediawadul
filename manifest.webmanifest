@@ -1,0 +1,84 @@
+{
+  "id": "./",
+  "name": "MEDIA WADUL GUS'E",
+  "short_name": "MEDIA WADUL",
+  "description": "CMS MEDIA WADUL GUS'E dengan mode Turbo: modal Brief instan, link publikasi dan insight dimuat sesuai kebutuhan, cache PWA cepat, serta Insight Tracker multi-platform.",
+  "lang": "id-ID",
+  "start_url": "./#dashboard",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#f4f7fb",
+  "theme_color": "#4a1028",
+  "categories": [
+    "productivity",
+    "business"
+  ],
+  "icons": [
+    {
+      "src": "./icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Dashboard",
+      "short_name": "Dashboard",
+      "url": "./#dashboard",
+      "icons": [
+        {
+          "src": "./icons/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Kalender Konten",
+      "short_name": "Kalender",
+      "url": "./#calendar",
+      "icons": [
+        {
+          "src": "./icons/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Kalender Publik",
+      "short_name": "Publik",
+      "url": "./#public",
+      "icons": [
+        {
+          "src": "./icons/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Insight Tracker",
+      "short_name": "Insight",
+      "url": "./#insights",
+      "icons": [
+        {
+          "src": "./icons/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ],
+  "version": "1.7.6"
+}
