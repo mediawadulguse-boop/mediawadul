@@ -195,7 +195,7 @@ const Config = (() => {
 }
   let savedConfig={};
   try{savedConfig=JSON.parse(localStorage.getItem(KEY)||'{}')}catch{savedConfig={}}
-  const legacyApiUrls=['https://script.google.com/macros/s/AKfycbyDP9k-E2EnvGXmRZB5Wb6OafDX8bZwfMOCR6tf0flNhTDll1gExjELlWk17OYqGi8/exec','https://script.google.com/macros/s/AKfycbwTY6QZd4Xm8Yuik1DK1Iga_Mu-JrNI27Akrn4Zm-2uIwcZu2LKJyQrHtLggPJkrvs/exec','https://script.google.com/macros/s/AKfycbzarVz8aNzPTtKc_2kuId_6_--DaD2TsktQZx3-vl88Ipq6yk60LYChH6WDz6J7Q2M/exec','https://script.google.com/macros/s/AKfycbwfNLDlFqQ_OnU1GQiJv0ZgIHLX8xpCetqwGLVK5F9EdXKAMvBS2Ltc94ONMJvh540/exec'];
+  const legacyApiUrls=['https://script.google.com/macros/s/AKfycbyDP9k-E2EnvGXmRZB5Wb6OafDX8bZwfMOCR6tf0flNhTDll1gExjELlWk17OYqGi8/exec','https://script.google.com/macros/s/AKfycbyAcY1UZyBCyrlMJQEKOOsphnZZNstf7kL2Mu5EEYRiBRLn9IVXudgbwCO9N4S_yA/exec','https://script.google.com/macros/s/AKfycbyAcY1UZyBCyrlMJQEKOOsphnZZNstf7kL2Mu5EEYRiBRLn9IVXudgbwCO9N4S_yA/exec'];
   if(!savedConfig.apiUrl || legacyApiUrls.includes(String(savedConfig.apiUrl).trim())) savedConfig.apiUrl=defaults.apiUrl;
   const data = {...defaults, ...savedConfig};
   if(!data.appName || /GovContent CMS/i.test(data.appName)) data.appName="MEDIA WADUL GUS'E";
