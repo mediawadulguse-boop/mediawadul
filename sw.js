@@ -1,4 +1,4 @@
-const CACHE_NAME='media-wadul-guse-v1.7.6';
+const CACHE_NAME='media-wadul-guse-v1.10.0';
 const APP_SHELL=['./','./index.html','./manifest.webmanifest','./icons/icon-192.png','./icons/icon-512.png','./icons/icon-maskable-512.png','./icons/apple-touch-icon.png'];
 
 self.addEventListener('install',event=>{
@@ -15,13 +15,10 @@ self.addEventListener('fetch',event=>{
   const url=new URL(request.url);
   if(url.origin!==self.location.origin)return;
   if(request.mode==='navigate'){
-    event.respondWith(caches.match('./index.html').then(cached=>{
-      const network=fetch(request).then(response=>{
-        if(response&&response.status===200){const copy=response.clone();caches.open(CACHE_NAME).then(cache=>cache.put('./index.html',copy))}
-        return response;
-      }).catch(()=>cached);
-      return cached||network;
-    }));
+    event.respondWith(fetch(request).then(response=>{
+      if(response&&response.status===200){const copy=response.clone();caches.open(CACHE_NAME).then(cache=>cache.put('./index.html',copy))}
+      return response;
+    }).catch(()=>caches.match('./index.html')));
     return;
   }
   event.respondWith(caches.match(request).then(cached=>cached||fetch(request).then(response=>{
