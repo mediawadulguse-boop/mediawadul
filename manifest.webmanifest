@@ -2,7 +2,7 @@
   "id": "./",
   "name": "MEDIA WADUL GUS'E",
   "short_name": "MEDIA WADUL",
-  "description": "CMS MEDIA WADUL GUS'E dengan mode Turbo: modal Brief instan, link publikasi dan insight dimuat sesuai kebutuhan, cache PWA cepat, serta Insight Tracker multi-platform.",
+  "description": "CMS MEDIA WADUL GUS'E v1.10.0 dengan validasi TikTok video/foto/carousel/link pendek, upload HTML terkompresi, submit cepat, kalender realtime, dan Insight Tracker berbasis tombol.",
   "lang": "id-ID",
   "start_url": "./#dashboard",
   "scope": "./",
@@ -47,9 +47,9 @@
       ]
     },
     {
-      "name": "Kalender Konten",
-      "short_name": "Kalender",
-      "url": "./#calendar",
+      "name": "Brief Konten",
+      "short_name": "Brief",
+      "url": "./#briefs",
       "icons": [
         {
           "src": "./icons/icon-192.png",
@@ -58,9 +58,9 @@
       ]
     },
     {
-      "name": "Kalender Publik",
-      "short_name": "Publik",
-      "url": "./#public",
+      "name": "Tugas",
+      "short_name": "Tugas",
+      "url": "./#tasks",
       "icons": [
         {
           "src": "./icons/icon-192.png",
@@ -80,5 +80,5 @@
       ]
     }
   ],
-  "version": "1.7.6"
+  "version": "1.9.8"
 }
