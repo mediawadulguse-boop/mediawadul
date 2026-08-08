@@ -1,6 +1,6 @@
 {
-  "config_version": "1.15.9",
+  "config_version": "1.15.11",
   "apiUrl": "https://script.google.com/macros/s/AKfycbzhMg-UWUBjlpMtzz9ANlnUs3MLE8Jv1d9pEtZwrhr_3fmiJlLBL79WPIvNkIeI60k/exec",
-  "updated_at": "2026-08-08T14:15:00+07:00",
-  "note": "Konfigurasi pusat MEDIA WADUL GUS'E. Edit apiUrl di file ini jika deployment Apps Script benar-benar berganti URL."
+  "updated_at": "2026-08-08T18:00:00+07:00",
+  "note": "Konfigurasi pusat MEDIA WADUL GUS'E. Edit apiUrl di file ini hanya jika URL deployment Apps Script benar-benar berganti."
 }
